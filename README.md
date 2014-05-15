@@ -28,4 +28,7 @@ on the tabs Instruction box.
 Version
 -------
 
-The most up to date version is 0.5
+The most up to date version is 0.6
+
+- Fixed bug where program would crash if output files are not moved. The program now overwrites existing files.
+- The help tab instructions were improved and a few grammar mistakes corrected.
