@@ -527,7 +527,7 @@ class Application:
 
     def run_efc(self, tab):
         # copy input file to the same directory as the exe
-        iSource = self.appRoot + '\\input\\' + tab.filename.get()
+        iSource = tab.filepath.get()
         iDestination = self.appRoot + '\\exe\\efc\\' + tab.filename.get()
         shutil.copyfile(iSource, iDestination)
 
@@ -581,7 +581,7 @@ class Application:
 
     def run_gwflow(self, tab):
         # copy input file to the same directory as the exe
-        iSource = self.appRoot + '\\input\\' + tab.filename.get()
+        iSource = tab.filepath.get()
         iDestination = self.appRoot + '\\exe\\gwflow\\' + tab.filename.get()
         shutil.copyfile(iSource, iDestination)
 
